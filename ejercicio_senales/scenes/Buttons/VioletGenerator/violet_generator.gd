@@ -1,6 +1,8 @@
 extends TextureButton
 
-
+func _ready():
+	add_to_group("blocks")
+	
 func _on_violet_generator_button_down():
 	generate_block()
 	
