@@ -11,14 +11,13 @@ func count_new_instance():
 
 func _ready():
 	$CountLabel.text = INSTANCES_TEXT + str(instancesCount)
-	$RedGenerator.get_node("Button").button_down.connect(count_new_instance)
-	$VioletGenerator.get_node("Button").button_down.connect(count_new_instance)
-	pass
+	$RedGenerator.button_down.connect(count_new_instance)
+	$VioletGenerator.button_down.connect(count_new_instance)
 
 func delete():
 	instancesCount = 0
 	$CountLabel.text = "Cantidad de instancias: 0"
-
+	
 
 	
 	

@@ -6,3 +6,5 @@
 [node name="RedGenerator" type="TextureButton" groups=["blocks"]]
 texture_normal = ExtResource("1")
 script = ExtResource("2_hqept")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
