@@ -10,3 +10,6 @@ func generate_block():
 	var block = preload("res://scenes/Blocks/Violet/BlockViolet.tscn").instantiate()
 	block.position = position + Vector2(0, 50 * get_child_count())  
 	get_parent().add_child(block)
+
+func delete():
+	queue_free()
