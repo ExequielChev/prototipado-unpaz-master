@@ -48,3 +48,6 @@ offset_right = 668.0
 offset_bottom = 144.0
 text = "Cantidad de Instancias:
 "
+
+[connection signal="button_down" from="RedGenerator" to="." method="_on_red_generator_button_down"]
+[connection signal="button_down" from="VioletGenerator" to="." method="_on_violet_generator_button_down"]
