@@ -15,7 +15,9 @@ func _ready():
 	$VioletGenerator.get_node("Button").button_down.connect(count_new_instance)
 	pass
 
-
+func delete():
+	instancesCount = 0
+	$CountLabel.text = "Cantidad de instancias: 0"
 
 
 	
